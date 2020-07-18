@@ -1,10 +1,16 @@
 import 'package:auth0/login.dart';
 import 'package:flutter/material.dart';
 
-class Signup extends StatelessWidget {
+class Signup extends StatefulWidget {
+  @override
+  _SignupState createState() => _SignupState();
+}
+
+class _SignupState extends State<Signup> {
   final emailController = TextEditingController();
 
   final passwordController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
